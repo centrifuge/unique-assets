@@ -4,17 +4,9 @@ version = "0.1.0"
 authors = ["Jay Butera <buterajay@protonmail.com>"]
 edition = "2018"
 
-[dependencies.frame-support]
-default-features = false
-git = 'https://github.com/centrifuge/substrate.git'
-rev = 'e271ae7fda72a7ad55ff3c216b8b2abae0ae31fd'
-version = '2.0.0-rc6'
-
-[dependencies.sp-std]
-default-features = false
-git = 'https://github.com/centrifuge/substrate.git'
-rev = 'e271ae7fda72a7ad55ff3c216b8b2abae0ae31fd'
-version = '2.0.0-rc6'
+[dependencies]
+frame-support = { branch = "master", git = "https://github.com/centrifuge/substrate.git", default-features = false }
+sp-std = { branch = "master", git = "https://github.com/centrifuge/substrate", default-features = false }
 
 [features]
 default = [ "std" ]
